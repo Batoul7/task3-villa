@@ -1,0 +1,15 @@
+.call {
+    display: flex;
+    gap: 10px;
+}
+.call .one-box {
+    box-shadow: 0 0 10px 5px #ccc;
+    background-color: white;
+}
+/* Media  */
+@media (max-width: 1200px) {
+    .call {
+        flex-direction: column;
+        gap: 30px;
+    }
+}

@@ -1,0 +1,129 @@
+nav {
+   padding: 20px 0;
+   color: var(--second-color);
+}
+nav .links {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    margin-right: 20px;
+}
+.link {
+    color: var(--second-color);
+    position: relative;
+    padding: 10px; 
+    font-weight: bold;
+    transition: .5s;
+}
+.link:hover, .link.active{
+    color: var(--main-color);
+}
+nav .bars {
+    width: 30px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.schedule-btn {
+    position: relative;
+    padding: 10px;
+    padding-left: 20px;
+    width: fit-content;
+    background-color: var(--second-color);
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.schedule-btn .icon {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.schedule-btn a{
+    padding-left: 15px;
+}
+.bars {
+    font-size: 35px;
+    cursor: pointer;
+}
+.sidebar {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    background-color: #d9d3cff5;
+    transition: left 0.3s ease;
+    display: none;
+    z-index: 11;
+}
+.sidebar.open {
+    left: 0;
+    width: 100%;
+    height: calc(100vh + 5px);
+}
+.sidebar ul {
+    list-style: none;
+    padding: 30px;
+    margin: 0;
+}
+.sidebar ul li {
+    padding: 10px 0;   
+}
+.sidebar ul li a {
+    display: block;
+    padding: 30px 20px;
+    color: var(--second-color);
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--second-color);
+    transition: 0.3s;
+}
+.sidebar .link.active   {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    margin-left: 5px;
+}
+.close {
+    font-size: 25px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    color: var(--second-color);
+}
+.close:hover {
+    color: var(--main-color);
+}
+/* Media */
+@media (max-width: 992px) {
+    nav .links li {
+        padding: 5px; 
+    }
+    .schedule-btn {
+        display: none;
+    }
+    nav .bars {
+        display: flex;
+    }
+    nav .links {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .sidebar {
+        display: block;
+        width: 80%;
+        left: -80%;
+    }
+    .sidebar-links {
+        padding: 20px;
+    }
+
+}

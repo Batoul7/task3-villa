@@ -1,0 +1,75 @@
+.best-deal {
+    background-color: #fbfbfb;
+}
+.deal {
+    padding-top: 30px;
+}
+.deal-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.deal-button a {
+    background-color: var(--second-color);
+    padding:10px 25px;
+    width: fit-content;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;;
+}
+.deal-button a.active  {
+    background-color: var(--main-color);
+}
+.deal {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 50px;
+} 
+.deal-one {
+    border-radius: 6px;
+    box-shadow: 0 0 10px 5px #ccc;
+    padding: 20px;
+}
+.deal-one div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: gray;
+}
+.deal-one div:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+.deal-one div span {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+.deal-img {
+    width: 100%;
+    max-width: 100%;
+}
+.deal-two h4 {
+    margin-bottom: 20px;
+}
+.deal-two p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+.deal-two span {
+    line-height: 1.7;
+    margin-bottom: 30px;
+    display: block;
+}
+/* Media */
+@media (max-width: 768px) {
+    .deal-button {
+        justify-content: center;
+    }
+    .schedule {
+        display: block;
+    }
+}

@@ -1,0 +1,25 @@
+.schedule {
+    position: relative;
+    padding: 10px;
+    padding-left: 20px;
+    width: fit-content;
+    background-color: var(--second-color);
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.schedule .icon {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.schedule a{
+    padding-left: 15px;
+}

@@ -1,0 +1,53 @@
+.carousel {
+  position: relative;
+  display: flex;
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+}
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel img:first-child {
+  display: block;
+}
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  padding: 15px;
+  border-radius: 50%;
+  color: white;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.205);
+}
+.left
+{
+  left: 20px;
+}
+.right
+{
+  right: 20px;
+} 
+.bullets {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+}
+.bullets span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.bullets span.active {
+  background: var(--main-color);
+}

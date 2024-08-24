@@ -1,0 +1,32 @@
+.contact-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    object-fit: cover;
+}
+ .contact-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    gap: 100px;
+    padding-top: 50px;
+    position: relative;
+}
+.contact-content .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.contact-content .map iframe {
+    width:100%; 
+    height:450px;
+    border:0;
+}
+.contact .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    color: white;
+}

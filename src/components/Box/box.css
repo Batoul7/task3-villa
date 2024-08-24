@@ -1,0 +1,26 @@
+.list {
+    padding: 20px;
+    background-color: white;
+}
+.list .one-box:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+.one-box {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.one-box .img {
+    margin-right: 30px;
+}
+.one-box .desc {
+    width: 100%;
+    padding-left: 10px;
+}
+.one-box .desc p {
+    margin-top: 5px;
+    color: #ccc;
+    width: 100%;
+}
