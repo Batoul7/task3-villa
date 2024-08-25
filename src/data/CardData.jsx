@@ -1,6 +1,13 @@
+import Property1 from './../assets/images/property-01.jpg'
+import Property2 from './../assets/images/property-02.jpg'
+import Property3 from './../assets/images/property-03.jpg'
+import Property4 from './../assets/images/property-04.jpg'
+import Property5 from './../assets/images/property-05.jpg'
+import Property6 from './../assets/images/property-06.jpg'
+
 export const CardData = [
     {
-        image: "/public/images/property-01.jpg",
+        image: Property1,
         desc:"Luxury Villa",
         price:"$2.264.000",
         title:"18 New Street Miami, OR 97219",
@@ -11,7 +18,7 @@ export const CardData = [
         parking:"6 spots",
     },
     {
-        image: "/public/images/property-02.jpg",
+        image: Property2,
         desc:"Luxury Villa",
         price:"$1.180.000",
         title:"54 Mid Street Florida, OR 27001",
@@ -22,7 +29,7 @@ export const CardData = [
         parking:"8 spots",
     },
     {
-        image: "/public/images/property-03.jpg",
+        image:Property3,
         desc:"Luxury Villa",
         price:"$1.460.000",
         title:"26  Old Street Miami, OR 38540",
@@ -33,7 +40,7 @@ export const CardData = [
         parking:"10 spots",
     },
     {
-        image: "/public/images/property-04.jpg",
+        image: Property4,
         desc:"Appartment",
         price:"$584.500",
         title:"12 New Street Miami, OR 12650",
@@ -44,7 +51,7 @@ export const CardData = [
         parking:"2 cars",
     },
     {
-        image: "/public/images/property-05.jpg",
+        image: Property5,
         desc:"Penthouse",
         price:"$3.264.000",
         title:"34 Beach Street Maiami, OR 42680",
@@ -55,7 +62,7 @@ export const CardData = [
         parking:"2 cars",
     },
     {
-        image: "/public/images/property-06.jpg",
+        image: Property6,
         desc:"Penthouse",
         price:"$3.264.000",
         title:"18 New Street Maiami",
@@ -66,7 +73,7 @@ export const CardData = [
         parking:"3 cars",
     },
     {
-        image: "/public/images/property-01.jpg",
+        image: Property1,
         desc:"Appartment",
         price:"$980.000",
         title:"14 Mid Street Miami, OR 36450",
@@ -77,7 +84,7 @@ export const CardData = [
         parking:"6 spots",
        },
        {
-        image: "/public/images/property-02.jpg",
+        image: Property2,
         desc:"Appartment",
         price:"$1.520.000",
         title:"26 Old Street Florida, OR 12870",
@@ -88,7 +95,7 @@ export const CardData = [
         parking:"14 spots",
        },
        {
-        image: "/public/images/property-03.jpg",
+        image: Property3,
         desc:"Appartment",
         price:"$3.145.000",
         title:"34 New Street Miami, OR 24650",

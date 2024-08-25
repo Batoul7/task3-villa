@@ -4,13 +4,14 @@ import Title from '../Title/Title'
 import ContactInfo from '../ContactInfo/ContactInfo'
 import { ContactData } from '../../data/ContactData'
 import Form from '../Form/Form'
+import ContactImg from './../../assets/images/contact-bg.jpg'
 
 const Contact = () => {
     
   return (
     <>
     <section id='contact' className='contact'>
-        <img src="/public/images/contact-bg.jpg" alt="" className='contact-img'/>
+        <img src={ContactImg} alt="" className='contact-img'/>
         <div className="text">
             <Title title={"Contact Us"} h2={"Get In Touch With Our Agents"}  />
         </div>

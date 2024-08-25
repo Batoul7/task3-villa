@@ -1,3 +1,7 @@
+import Property3 from './../assets/images/property-03.jpg'
+import Property5 from './../assets/images/property-05.jpg'
+import Property6 from './../assets/images/property-06.jpg'
+
 export const FilterData = [
 {
     one: [ {
@@ -21,7 +25,7 @@ export const FilterData = [
                 info: 'Bank'
             }
         ],
-    img: '/public/images/property-05.jpg',
+    img: Property5,
     two: [
         {
             h4: 'Extra Info About Property',
@@ -53,7 +57,7 @@ export const FilterData = [
             info: 'Bank',
         }
     ],
-    img: '/public/images/property-06.jpg',
+    img: Property6,
     two: [
         {
             h4: 'Detail Info About Villa',
@@ -85,7 +89,7 @@ export const FilterData = [
             info: 'Bank',
         }
     ],
-    img: '/public/images/property-03.jpg',
+    img: Property3,
     two: [
         {
             h4: 'Extra Info About Penthouse',

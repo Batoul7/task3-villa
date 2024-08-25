@@ -3,11 +3,12 @@ import './PropertyDetails.css'
 import Box from '../Box/Box'
 import { BoxData } from '../../data/BoxData'
 import Accordion from '../Accordion/Accordion'
+import Property from './../../assets/images/property-01.jpg'
 
 export default function PropertyDetails() {
  const data = [
     {
-        image: "/public/images/property-01.jpg",
+        image: Property,
         desc:"Appartment",
         title:"24 New Street Miami, OR 24560",
     }

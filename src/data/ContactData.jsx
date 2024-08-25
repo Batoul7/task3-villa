@@ -1,11 +1,14 @@
+import Phone from './../assets/images/phone-icon.png'
+import Email from './../assets/images/email-icon.png'
+
 export const ContactData = [
     {
-        image:"/public/images/phone-icon.png",
+        image:Phone,
         title:"010-020-0340",
         desc:"Phone Number",
     },
     {
-        image:"/public/images/email-icon.png",
+        image:Email,
         title:"info@villa.co",
         desc:"Busniss Email",
     }

@@ -1,21 +1,26 @@
+import InfoIcon1 from './../assets/images/info-icon-01.png'
+import InfoIcon2 from './../assets/images/info-icon-02.png'
+import InfoIcon3 from './../assets/images/info-icon-03.png'
+import InfoIcon4 from './../assets/images/info-icon-04.png'
+
 export const BoxData = [
     {
-        image:"/images/info-icon-01.png",
+        image:InfoIcon1,
         title:"250 m2",
         desc:"Total Flat Space"
     },
     {
-        image:"/images/info-icon-02.png",
+        image:InfoIcon2,
         title:"Contract",
         desc:"Contract Ready"
     },
     {
-        image:"/images/info-icon-03.png",
+        image:InfoIcon3,
         title:"Payment",
         desc:"Payment Process"
     },
     {
-        image:"/images/info-icon-04.png",
+        image:InfoIcon4,
         title:"Safety",
         desc:"24/7 Under Control"
     },

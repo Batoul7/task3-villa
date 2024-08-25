@@ -1,6 +1,6 @@
 import React from 'react';
-import Feature from './../../../public/images/featured.jpg';
-import FeatureIcon from './../../../public/images/featured-icon.png';
+import Feature from './../../assets/images/featured.jpg';
+import FeatureIcon from './../../assets/images/featured-icon.png';
 import './Featured.css'
 import Box from '../Box/Box';
 import Title from '../Title/Title';

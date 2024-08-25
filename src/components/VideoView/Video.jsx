@@ -4,6 +4,8 @@ import './video.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import VideoBox from './VideoBox';
+import VideoBack from './../../assets/images/video-bg.jpg'
+import VideoFrame from './../../assets/images/video-frame.jpg'
 
 
 const Video = () => {
@@ -24,14 +26,14 @@ const Video = () => {
   return (
     <>
     <div className='video'> 
-        <img src="/public/images/video-bg.jpg" alt="" className='video-img'/>
+        <img src={VideoBack} alt="" className='video-img'/>
         <div className="text">
             <Title title={"Video View"} h2={"Get Closer View & Different Feeling"} />
         </div>
     </div>
         <div className='video-content'>
             <div className="image">
-                <img src='/public/images/video-frame.jpg' alt=''/>
+                <img src={VideoFrame} alt=''/>
                 <div className="play">
                     <FontAwesomeIcon icon={faPlay}/>
                 </div>

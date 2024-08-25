@@ -2,6 +2,7 @@ import React from 'react';
 import './hero.css';
 import { slideData } from '../../data/SlideData';
 import Carousel from '../Carousel/Carousel';
+import Heading from './../../assets/images/page-heading-bg.jpg'
 
 const Hero = ({page, h}) => {
  
@@ -17,7 +18,7 @@ const Hero = ({page, h}) => {
         </div>
         ) : ( 
         <div className='hero-page'>
-          <img src="/public/images/page-heading-bg.jpg" alt="" />
+          <img src={Heading} alt="" />
           <div className="hero-title flex" 
                 style={{flexDirection:"column",
                         textTransform:"uppercase",
