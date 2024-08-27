@@ -14,7 +14,6 @@ const Box = ({info}) => {
                         <p>{info.desc}</p>
                     </div>
                 </div>
-              
           ))} 
       </ul>
   )

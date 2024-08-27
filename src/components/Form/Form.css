@@ -44,8 +44,3 @@
 form button:hover {
     background-color: var(--main-color);
 }
-@media (max-width:992px) {
-    .form {
-        flex-basis: 100%;
-    }
-}
