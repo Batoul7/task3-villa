@@ -6,7 +6,7 @@ export default function FilterButtons({items, func,setItems, current}) {
 
   return (
     <div className='filter-buttons'>
-        <button className='filter-button'
+        <button className={current === -1 ? 'filter-button active' : 'filter-button'}
                 onClick={() => setItems(CardData)}>
                 Show All
         </button>

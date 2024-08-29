@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 const Properties = () => {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(-1);
   const [card,setCard] = useState(CardData);
   const menuItems = [...new Set(CardData.map((val)=> (val.desc)))];
 
