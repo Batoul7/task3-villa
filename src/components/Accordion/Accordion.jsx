@@ -17,7 +17,7 @@ export default function Accordion() {
   return (
     <div className='accordion'>
       {accordionData.map((item, index) => (
-        <div key={index} className='accordion-item'>
+        <div key={index} className={`accordion-item ${open === index ? 'open' : ''}`}>
           <div className='accordion-ques' onClick={() => toggle(index)}>
             <h3 style={{ color: open === index ? '#f35525' : 'black' }}>
               {item.question}
