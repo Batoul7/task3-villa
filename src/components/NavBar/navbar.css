@@ -1,9 +1,10 @@
 nav {
-   padding: 20px 0;
-   color: var(--second-color);
-   position: fixed;
-   width: 100%;
+    padding: 20px 0;
+    color: var(--second-color);
+    position: fixed;
+    width: 100%;
     background-color: white;
+    border: 1px solid #ccccccdd;
     z-index: 99;
 }
 nav .links {
