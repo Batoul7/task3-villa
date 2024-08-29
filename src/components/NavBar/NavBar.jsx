@@ -21,7 +21,8 @@ const NavBar = () => {
 
   return (
     <>
-    <nav className="container flex">
+    <nav >
+    <div className="container flex">
         <div className="logo">
             <h1>VILLA</h1>
         </div>
@@ -43,6 +44,7 @@ const NavBar = () => {
             <a>Schedule a visit</a>
         </div>
         <FontAwesomeIcon icon={faBarsStaggered} className='bars' onClick={() => setIsSidebarOpen(true)}/>
+        </div>
         </nav>
             <div className={`sidebar ${isSidebarOpen ? ' open' : ''}`}>
                 <ul className='sidebar-links'>

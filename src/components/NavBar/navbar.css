@@ -1,6 +1,10 @@
 nav {
    padding: 20px 0;
    color: var(--second-color);
+   position: fixed;
+   width: 100%;
+    background-color: white;
+    z-index: 99;
 }
 nav .links {
     position: relative;
@@ -65,6 +69,8 @@ nav .bars {
     z-index: 11;
 }
 .sidebar.open {
+    position: fixed;
+    top: 71px;
     left: 0;
     width: 100%;
     height: calc(100vh + 5px);
