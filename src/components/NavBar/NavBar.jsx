@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './navbar.css'
 import Schedule from '../Schedule/Schedule';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,7 +10,23 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
     const [active, setActive] = useState(0);
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-    
+    const [isFixed, setIsFixed] = useState(false); 
+
+    useEffect(() => {
+         const handleScroll = () => {
+             if (window.scrollY > 50) { 
+                setIsFixed(true); 
+             } else {
+                setIsFixed(false);
+             }
+         };
+ 
+         window.addEventListener('scroll', handleScroll);
+         
+         return () => {
+             window.removeEventListener('scroll', handleScroll);
+         };
+     }, []);
     function activeLink(index) {
         if (active === index) {
             setActive(0);
@@ -21,54 +37,54 @@ const NavBar = () => {
 
   return (
     <>
-    <nav >
-    <div className="container flex">
-        <div className="logo">
-            <h1>VILLA</h1>
+    <nav className={`navbar  ${isFixed ? 'fixed  ' : ''} `}>
+        <div className="container flex">
+            <div className="logo">
+                <h1>VILLA</h1>
+            </div>
+            <ul className="links">
+                {links.map((link, index) => (
+                    <li key={index} >
+                        <Link to={link.path} 
+                                className={active === index ? 'link active' : 'link'}
+                                onClick={() => activeLink(index)}  >
+                            {link.text}
+                        </Link>
+                    </li>
+                ))}    
+            </ul>
+            <div className='schedule-btn'>
+                <div className='icon'>
+                    <FontAwesomeIcon icon={faCalendar} />
+                </div>
+                <a>Schedule a visit</a>
+            </div>
+            <FontAwesomeIcon icon={faBarsStaggered} className='bars' onClick={() => setIsSidebarOpen(true)}/>
         </div>
-        <ul className="links">
+    </nav>
+    <div className={`sidebar ${isSidebarOpen ? ' open' : ''}`}>
+        <ul className='sidebar-links'>
+            <FontAwesomeIcon icon={faClose} className='close' onClick={() => setIsSidebarOpen(false)} />
             {links.map((link, index) => (
-                <li key={index} >
+                <li key={index}>
                     <Link to={link.path} 
                             className={active === index ? 'link active' : 'link'}
-                            onClick={() => activeLink(index)}  >
+                            onClick={() => activeLink(index)} >
                         {link.text}
                     </Link>
                 </li>
-            ))}    
+            ))}
         </ul>
-        <div className='schedule-btn'>
-            <div className='icon'>
-                <FontAwesomeIcon icon={faCalendar} />
-            </div>
-            <a>Schedule a visit</a>
+        <div className="btn" 
+        style={{margin:"0 auto",
+            position:"absolute", 
+            left:"50%",
+            transform:"translateX(-50%)"
+            }}>
+            <Schedule/>
         </div>
-        <FontAwesomeIcon icon={faBarsStaggered} className='bars' onClick={() => setIsSidebarOpen(true)}/>
-        </div>
-        </nav>
-            <div className={`sidebar ${isSidebarOpen ? ' open' : ''}`}>
-                <ul className='sidebar-links'>
-                    <FontAwesomeIcon icon={faClose} className='close' onClick={() => setIsSidebarOpen(false)} />
-                    {links.map((link, index) => (
-                        <li key={index}>
-                            <Link to={link.path} 
-                                    className={active === index ? 'link active' : 'link'}
-                                    onClick={() => activeLink(index)} >
-                                {link.text}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-                <div className="btn" 
-                style={{margin:"0 auto",
-                    position:"absolute", 
-                    left:"50%",
-                    transform:"translateX(-50%)"
-                    }}>
-                    <Schedule/>
-                </div>
-            </div>
-        </>
+    </div>
+    </>
   )
 }
 

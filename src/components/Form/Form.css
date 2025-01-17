@@ -44,3 +44,9 @@
 form button:hover {
     background-color: var(--main-color);
 }
+@media (max-width:350px) {
+     .form {
+        padding: 20px;
+        width: 270px;
+    }
+}

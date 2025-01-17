@@ -16,6 +16,11 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: fit-content;
+}
+.contact-content .map 
+{
+    width: fit-content;
 }
 .contact-content .map iframe {
     width:95%; 
@@ -29,4 +34,16 @@
     flex-direction: column;
     padding-top: 50px;
     color: white;
+}
+/* Media  */
+@media (max-width:350px) {
+    .contact-content .map iframe {
+       max-width: 90%;
+    }
+    .contact-content .map {
+        width: fit-content;
+    }
+    .call {
+        width: fit-content;
+    }
 }

@@ -23,3 +23,8 @@
     color: #ccc;
     width: 100%;
 }
+@media (max-width: 310px) {
+    .list {
+       padding: 5px
+    }
+}

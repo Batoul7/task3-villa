@@ -23,7 +23,7 @@ const Featured = () => {
                 </div>
             </div>
             <Accordion/>
-            <div style={{boxShadow:"0px 0px 10px 5px #ccc",padding:"10px", height:"450px", overflow:"hidden"}}>
+            <div className="info" style={{boxShadow:"0px 0px 10px 5px #ccc",padding:"10px", height:"450px", overflow:"hidden"}}>
                 <Box info={BoxData}/>
             </div>
         </div>

@@ -52,3 +52,9 @@
 .card .foot a:hover {
     background-color: var(--main-color);
 }
+@media (max-width:310px) {
+    .card {
+        padding: 5px;
+        width: 280px;
+    }
+}

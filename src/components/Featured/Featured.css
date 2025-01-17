@@ -5,6 +5,10 @@
 }
 .featured-content .one {
     position: relative;
+    width: fit-content;
+}
+.featured-content .one  .featured-img {
+    width: 270px;
 }
 .featured-content .one  .featured-img img{
     width: 100%;
@@ -34,4 +38,9 @@
         left: -20px;
     }
   
+}
+@media (max-width: 310px) {
+    .featured-content .info {
+        width: 270px;
+    }
 }

@@ -1,11 +1,16 @@
 nav {
+    z-index: 1000; 
+    background-color: white;
     padding: 20px 0;
     color: var(--second-color);
-    position: fixed;
     width: 100%;
-    background-color: white;
-    border: 1px solid #ccccccdd;
-    z-index: 99;
+}
+nav.fixed {
+    width: 100%;
+    position: fixed; 
+    top: 0; 
+    transition: background-color 0.3s ease; 
+    background-color: #F0E3D3;
 }
 nav .links {
     position: relative;
@@ -64,17 +69,19 @@ nav .bars {
     position: absolute;
     top: 0;
     height: 100vh;
-    background-color: #d9d3cff5;
+    background-color: #F0E3D3;
     transition: left 0.3s ease;
     display: none;
     z-index: 11;
 }
 .sidebar.open {
     position: fixed;
-    top: 71px;
+    top: 0;
     left: 0;
     width: 100%;
-    height: calc(100vh + 5px);
+    z-index: 1000;
+    height: 100vh;
+    padding: 50px 0;
 }
 .sidebar ul {
     list-style: none;

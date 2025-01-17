@@ -23,3 +23,8 @@
 .accordion-item.open .accordion-answer {
     max-height: 1000px;
 }
+@media (max-width:320px) {
+    .accordion {
+        width: 280px;
+    }
+}
