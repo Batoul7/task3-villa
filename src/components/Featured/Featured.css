@@ -19,7 +19,7 @@
     position: absolute;
     background-color: var(--main-color);
     bottom: -35px;
-    left: -50px;
+    left: -30px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -29,13 +29,13 @@
 }
 
 /* Media */
-@media (max-width: 660px) {
+@media (max-width: 768px) {
     .featured-content .one {
         text-align: center;
     }
     .featured-content .one .featured-icon {
         bottom: -30px;
-        left: -20px;
+        left: -13px;
     }
   
 }

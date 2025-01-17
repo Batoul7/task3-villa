@@ -6,8 +6,9 @@
     object-fit: cover;
 }
  .contact-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 100px;
     padding-top: 50px;
     position: relative;
@@ -16,14 +17,14 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: fit-content;
+    flex-basis: 40%;
 }
 .contact-content .map 
 {
-    width: fit-content;
+    width: 100%;
 }
 .contact-content .map iframe {
-    width:95%; 
+    width:100%; 
     height:450px;
     border:0;
 }
@@ -36,14 +37,9 @@
     color: white;
 }
 /* Media  */
-@media (max-width:350px) {
-    .contact-content .map iframe {
-       max-width: 90%;
-    }
-    .contact-content .map {
-        width: fit-content;
-    }
-    .call {
-        width: fit-content;
+@media (max-width:640px) {
+    .contact-content { 
+        flex-direction: column;
+        align-items: normal;
     }
 }

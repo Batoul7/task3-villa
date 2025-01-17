@@ -8,7 +8,6 @@ const VideoBox = ({data}) => {
                 <span >{item.number}</span>
                 <p>{item.text}</p>
             </div>
-      
    )) }
   </>
   )

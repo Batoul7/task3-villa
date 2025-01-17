@@ -16,10 +16,10 @@ const Featured = () => {
         <div className="featured-content">
             <div className="one">
                 <div className="featured-img">
-                    <img src={Feature} alt=''/>
+                    <img src={Feature} alt='featured-img'/>
                 </div>
                 <div className="featured-icon">
-                    <img src={FeatureIcon} alt='' />
+                    <img src={FeatureIcon} alt='featured-icon' />
                 </div>
             </div>
             <Accordion/>
