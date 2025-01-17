@@ -1,5 +1,6 @@
 .call {
     display: flex;
+    justify-content: space-between;
     gap: 10px;
 }
 .call .one-box {
@@ -11,5 +12,15 @@
     .call {
         flex-direction: column;
         gap: 30px;
+    }
+}
+@media (max-width:750px) {
+    .call {
+        flex-direction: row;  
+    }
+}
+@media (max-width:557px) {
+    .call {
+        flex-direction: column;  
     }
 }
