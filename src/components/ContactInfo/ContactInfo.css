@@ -1,19 +1,14 @@
 .call {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    gap: 10px;
+    gap: 30px;
 }
 .call .one-box {
     box-shadow: 0 0 10px 5px #ccc;
     background-color: white;
 }
 /* Media  */
-@media (max-width: 1200px) {
-    .call {
-        flex-direction: column;
-        gap: 30px;
-    }
-}
 @media (max-width:750px) {
     .call {
         flex-direction: row;  
